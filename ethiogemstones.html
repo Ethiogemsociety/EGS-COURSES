@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gemstone Course App - Ethiopian Gem Society</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Ethiopian Gem Society</h1>
+    <nav>
+      <ul>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#payment">Payment</a></li>
+        <li><a href="#admin-upload" id="admin-link">Admin Upload</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="courses">
+    <h2>Available Courses</h2>
+    <div class="course-list">
+      <!-- Courses will be loaded here dynamically -->
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Learn about various gemstones and their industrial applications from experts at Ethiopian Gem Society.</p>
+    <p>Our experienced gemologists include:</p>
+    <ul>
+      <li>Dr. Tsmrat Mengstu</li>
+      <li>Mr. Kidusan Dawit</li>
+      <li>Ms. Nardos H/mariyam</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: +251944343240</p>
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <section id="payment">
+    <h2>Payment Options</h2>
+    <p>Bank Account: 135091324 (Bank of Abyssinia) - 5500 Birr</p>
+    <p>PayPal: opaltube5@gmail.com - 50 USD</p>
+    <form id="proof-upload-form">
+      <label for="proof">Upload Payment Proof:</label>
+      <input type="file" id="proof" name="proof" required>
+      <button type="submit">Submit Payment Proof</button>
+    </form>
+  </section>
+
+  <section id="admin-upload">
+    <h2>Admin File Upload</h2>
+    <div id="admin-login" style="display: none;">
+      <label for="admin-email">Admin Email:</label>
+      <input type="email" id="admin-email" placeholder="Enter Admin Email" required>
+      <label for="admin-password">Admin Password:</label>
+      <input type="password" id="admin-password" placeholder="Enter Password" required>
+      <button id="admin-login-btn">Login</button>
+    </div>
+    <div id="upload-options" style="display: none;">
+      <label for="admin-file">Select File to Upload:</label>
+      <input type="file" id="admin-file" name="admin-file" accept="video/*, image/*, audio/*, application/pdf">
+      <button id="admin-upload-btn" disabled>Upload</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Ethiopian Gem Society. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
